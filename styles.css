@@ -4,3 +4,9 @@
    Section: CS - 202
    Date: October 2025
 ========================================= */
+
+body, header, nav, main, footer, h1, h2, h3, div, img, ul, figure, figcaption, section, article, aside, p, table, th, td, caption {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
