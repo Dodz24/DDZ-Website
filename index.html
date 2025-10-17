@@ -5,27 +5,51 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>DDZ Streetwear - Home</title>
   <link rel="stylesheet" href="styles.css">
-</head>
+  <script>
+    window.onload = function() {
+      const message = document.createElement('div');
+      message.textContent = "WELCOME TO DDZ!";
+      message.style.position = "fixed";
+      message.style.top = "10px";
+      message.style.left = "50%";
+      message.style.transform = "translateX(-50%)";
+      message.style.background = "#710c0c";
+      message.style.color = "#fff";
+      message.style.padding = "10px 20px";
+      message.style.borderRadius = "8px";
+      message.style.fontWeight = "bold";
+      message.style.opacity = "1"; 
+      message.style.transition = "opacity 0.8s"; 
+      
+      document.body.appendChild(message);
 
+      setTimeout(() => {
+        message.style.opacity = "0"; // fade out
+        // remove from DOM after fade completes
+        setTimeout(() => message.remove(), 800);
+    }, 1000);
+  }
+  </script>
+</head>
 
 <body>
   <!-- Header -->
   <header>
-  <a href="index.html" class="logo">
-    <img src="img/logo.png" alt="DDZ Clothing">
-  </a>
+    <a href="index.html" class="logo">
+      <img src="img/logo.png" alt="DDZ Clothing">
+    </a>
 
-  <!-- Navigation -->
-  <nav class="tablet-desktop">
-    <ul>
-      <li><a href="index.html">HOME</a></li>
-      <li><a href="about.html">ABOUT</a></li>
-      <li><a href="shop.html">SHOP</a></li>
-      <li><a href="events.html">EVENTS</a></li>
-      <li><a href="faq.html">FAQS</a></li>
-    </ul>
-  </nav>
-</header>
+    <!-- Navigation -->
+    <nav class="tablet-desktop">
+      <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="shop.html">SHOP</a></li>
+        <li><a href="events.html">EVENTS</a></li>
+        <li><a href="faq.html">FAQS</a></li>
+      </ul>
+    </nav>
+  </header>
 
   <!-- Hero Section -->
   <section id="hero">
@@ -49,46 +73,45 @@
     </p>
 
     <!-- Featured Collection Section -->
-<section id="featured">
-  <div class="grid">
-    <a href="about.html">
-      <article class="frame">
-        <img src="img/about.png" alt="About Page">
-        <p class="pic-text">ABOUT</p>
-      </article>
-    </a>
+    <section id="featured">
+      <div class="grid">
+        <a href="about.html">
+          <article class="frame">
+            <img src="img/about.png" alt="About Page">
+            <p class="pic-text">ABOUT</p>
+          </article>
+        </a>
 
-    <a href="shop.html">
-      <article class="frame">
-        <img src="img/collections.png" alt="Shop Page">
-        <p class="pic-text">COLLECTIONS</p>
-      </article>
-    </a>
+        <a href="shop.html">
+          <article class="frame">
+            <img src="img/collections.png" alt="Shop Page">
+            <p class="pic-text">COLLECTIONS</p>
+          </article>
+        </a>
 
-    <a href="events.html">
-      <article class="frame">
-        <img src="img/events.png" alt="Events Page">
-        <p class="pic-text">EVENTS</p>
-      </article>
-    </a>
-  </div>
-</section>
+        <a href="events.html">
+          <article class="frame">
+            <img src="img/events.png" alt="Events Page">
+            <p class="pic-text">EVENTS</p>
+          </article>
+        </a>
+      </div>
+    </section>
   </main>
 
   <!-- Footer -->
   <footer>
-  <p>&copy; 2025 DDZ Clothing. All rights reserved. Elevate Your Style With Us.</p>
-  <div class="socials">
-    <a href="#" class="social-link">
-      <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook" width="24">
-      <span>@DDZClothing</span>
-    </a>
-    <a href="#" class="social-link">
-      <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram" width="24">
-      <span>@ddz.clothing</span>
-    </a>
-  </div>
-</footer>
-
+    <p>&copy; 2025 DDZ Clothing. All rights reserved. Elevate Your Style With Us.</p>
+    <div class="socials">
+      <a href="#" class="social-link">
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook" width="24">
+        <span>@DDZClothing</span>
+      </a>
+      <a href="#" class="social-link">
+        <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram" width="24">
+        <span>@ddz.clothing</span>
+      </a>
+    </div>
+  </footer>
 </body>
 </html>
