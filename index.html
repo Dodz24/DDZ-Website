@@ -5,30 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>DDZ Streetwear - Home</title>
   <link rel="stylesheet" href="styles.css">
-  <script>
-    window.onload = function() {
-      const message = document.createElement('div');
-      message.textContent = "WELCOME TO DDZ!";
-      message.style.position = "fixed";
-      message.style.top = "10px";
-      message.style.left = "50%";
-      message.style.transform = "translateX(-50%)";
-      message.style.background = "#710c0c";
-      message.style.color = "#fff";
-      message.style.padding = "10px 20px";
-      message.style.borderRadius = "8px";
-      message.style.fontWeight = "bold";
-      message.style.opacity = "1"; 
-      message.style.transition = "opacity 0.8s"; 
-      
-      document.body.appendChild(message);
-
-      setTimeout(() => {
-        message.style.opacity = "0"; 
-        setTimeout(() => message.remove(), 800);
-    }, 1000);
-  }
-  </script>
 </head>
 
 <body>
@@ -60,7 +36,7 @@
     <p id="intro">
       Welcome to DDZ Clothing, where fashion meets individuality. 
       We are dedicated to bringing you high-quality, trend-forward apparel that lets you express your unique style. 
-      From casual essentials to statement pieces, every item is designed with comfort, quality, and creativity in mind
+      From casual essentials to statement pieces, every item is designed with comfort, quality, and creativity in mind.
     </p>
 
     <div class="intro-image">
@@ -112,5 +88,6 @@
       </a>
     </div>
   </footer>
+  <script src="script.js"></script>
 </body>
 </html>
