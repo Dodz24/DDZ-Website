@@ -24,8 +24,7 @@
       document.body.appendChild(message);
 
       setTimeout(() => {
-        message.style.opacity = "0"; // fade out
-        // remove from DOM after fade completes
+        message.style.opacity = "0"; 
         setTimeout(() => message.remove(), 800);
     }, 1000);
   }
