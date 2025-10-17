@@ -38,3 +38,91 @@ a {
 .accent {
 	color: #ffcc00;
 }
+
+/* =========================================
+   Header & Navigation
+========================================= */
+header {
+	background-color: #000000;
+	text-align: center;
+	padding: 1rem;
+}
+
+header img {
+	width: 100px;
+	background-color: black;
+	padding: 8px;
+	border-radius: 6px;
+}
+
+header h1 {
+	font-size: 2em;
+	letter-spacing: 2px;
+	color: #fff;
+}
+
+nav {
+	margin-top: 1rem;
+}
+
+nav ul {
+	list-style-type: none;
+	text-align: center;
+	padding: 0;
+}
+
+nav li {
+	font-size: 1.2em;
+	font-weight: bold;
+	padding: 0.5em 0;
+	border-top: 1px solid #333;
+}
+
+nav li:first-child {
+	border-top: none;
+}
+
+nav li a {
+	color: #fff;
+	display: block;
+	transition: 0.3s;
+}
+
+nav li a:hover {
+	color: #710c0c;
+}
+
+.mobile {
+	display: block;
+}
+
+.tablet-desktop {
+	display: block;
+}
+
+/* Hero Section */
+#hero {
+	position: relative;
+	overflow: hidden;
+}
+
+#hero img {
+	width: 100%;
+	height: auto;
+	display: block;
+	filter: brightness(70%);
+}
+
+.hero-text {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: #fff;
+	text-align: center;
+}
+
+.hero-text h2 {
+	font-size: 2em;
+	text-shadow: 2px 2px 5px rgba(0,0,0,0.8);
+}
